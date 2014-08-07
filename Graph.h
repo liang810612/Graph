@@ -53,11 +53,23 @@ class Graph {
         friend std::pair<edge_descriptor, bool> add_edge (vertex_descriptor u, vertex_descriptor v, Graph& g) {
             // <your code>
             edge_descriptor ed = std::make_pair(u,v);
-            bool            b  = false;
-            if(u == v)
-                return make_pair(ed, b);
+            bool            b;
+            vertices_size_type max_size = std::max(u, v);
+            if(std::find(g._e.begin(), g._e.end(),ed) == g._e.end()){
+                if((u > g._v.back()) || (v > g._v.back())){
+                    ++max_size;
+                    g._v.resize(max_size);
+                    g._g.resize(max_size);
+                }
 
+                (g._g[u]).push_back(v);
+                g._e.insert(ed);
 
+                b = true;
+            }
+            else{
+                b = false;
+            }
 
             return std::make_pair(ed, b);}
 
@@ -107,7 +119,13 @@ class Graph {
         friend std::pair<edge_descriptor, bool> edge (vertex_descriptor u, vertex_descriptor v, const Graph& g) {
             // <your code>
             edge_descriptor ed = std::make_pair(u,v);
-            bool            b  = true;
+            bool            b;
+            if(std::find(g._e.begin(), g._e.end(), ed) == g._e.end()){
+                b = false;
+            }
+            else{
+                b = true;
+            }
             return std::make_pair(ed, b);}
 
         // -----
