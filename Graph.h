@@ -33,7 +33,7 @@ class Graph {
         typedef std::pair<vertex_descriptor, vertex_descriptor> edge_descriptor;    
 
         typedef std::vector<vertex_descriptor>::const_iterator vertex_iterator;    
-        typedef std::vector<edge_descriptor>::const_iterator edge_iterator;      
+        typedef std::set<edge_descriptor>::const_iterator edge_iterator;      
         typedef std::vector<vertex_descriptor>::const_iterator adjacency_iterator; 
 
         typedef std::size_t vertices_size_type;
