@@ -262,7 +262,9 @@ class Graph {
          */
         bool valid () const {
             // <your code>
-            return true;}
+            if(_g.size() == _v.size())
+                return true;
+            return false;}
 
     public:
         // ------------
