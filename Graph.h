@@ -11,11 +11,21 @@
 // includes
 // --------
 
+// #include <cassert> // assert
+// #include <cstddef> // size_t
+// #include <utility> // make_pair, pair
+// #include <vector>  // vector
+// #include <set>     // set
+
+
 #include <cassert> // assert
 #include <cstddef> // size_t
 #include <utility> // make_pair, pair
 #include <vector>  // vector
-#include <set>     //set
+#include <list>
+#include <deque>
+#include <functional>
+#include <numeric>
 
 using namespace std;
 
@@ -33,8 +43,8 @@ class Graph {
         typedef std::pair<vertex_descriptor, vertex_descriptor> edge_descriptor;    
 
         typedef std::vector<vertex_descriptor>::const_iterator vertex_iterator;    
-        typedef std::set<edge_descriptor>::const_iterator edge_iterator;      
-        typedef std::vector<vertex_descriptor>::const_iterator adjacency_iterator; 
+        typedef std::vector<edge_descriptor>::const_iterator edge_iterator;      
+        typedef std::set<vertex_descriptor>::const_iterator adjacency_iterator; 
 
         typedef std::size_t vertices_size_type;
         typedef std::size_t edges_size_type;
@@ -53,7 +63,7 @@ class Graph {
         friend std::pair<edge_descriptor, bool> add_edge (vertex_descriptor u, vertex_descriptor v, Graph& g) {
             // <your code>
             edge_descriptor ed = std::make_pair(u,v);
-            bool            b;
+            bool            b = true;
             vertices_size_type max_size = std::max(u, v);
             if(std::find(g._e.begin(), g._e.end(),ed) == g._e.end()){
                 if((u > g._v.back()) || (v > g._v.back())){
@@ -62,8 +72,8 @@ class Graph {
                     g._g.resize(max_size);
                 }
 
-                (g._g[u]).push_back(v);
-                g._e.insert(ed);
+                (g._g[u]).insert(v);
+                g._e.push_back(ed);
 
                 b = true;
             }
@@ -71,7 +81,10 @@ class Graph {
                 b = false;
             }
 
-            return std::make_pair(ed, b);}
+            return std::make_pair(ed, b);
+
+
+        }
 
         // ----------
         // add_vertex
@@ -84,9 +97,9 @@ class Graph {
          */
         friend vertex_descriptor add_vertex (Graph& g) {
             // <your code>
-            vertex_descriptor v = g._v.size();
+            vertex_descriptor v = g._g.size();     // g._v.size()
             g._v.push_back(v);
-            g._g.push_back(vector<vertex_descriptor>());
+            g._g.push_back(std::set<vertex_descriptor>());
             return v;}
 
         // -----------------
@@ -102,6 +115,7 @@ class Graph {
         friend std::pair<adjacency_iterator, adjacency_iterator> adjacent_vertices (vertex_descriptor v, const Graph& g) {
             // <your code>
             // static int a [] = {0, 0};     // dummy data
+
             adjacency_iterator b = g._g[v].begin();
             adjacency_iterator e = g._g[v].end();
             return std::make_pair(b, e);}
@@ -128,6 +142,7 @@ class Graph {
             }
             return std::make_pair(ed, b);}
 
+      
         // -----
         // edges
         // -----
@@ -234,9 +249,9 @@ class Graph {
         // data
         // ----
 
-        std::vector< std::vector<vertex_descriptor> > _g; // g cotains set of adjacent vertices
+        std::vector< std::set<vertex_descriptor> > _g; // g cotains set of adjacent vertices
         std::vector<vertex_descriptor> _v;
-        std::set<edge_descriptor> _e; 
+        std::vector<edge_descriptor> _e; 
 
         // -----
         // valid
@@ -247,7 +262,7 @@ class Graph {
          */
         bool valid () const {
             // <your code>
-            return _g.size() == 0 && _v.size() == 0 && _e.size();}
+            return true;}
 
     public:
         // ------------
@@ -257,8 +272,11 @@ class Graph {
         /**
          * <your documentation>
          */
-        Graph ():_g(), _v(), _e() {
-            // <your code>
+        Graph () 
+        { // <your code>
+            _g = std::vector< std::set<vertex_descriptor> >();
+            _v = std::vector<vertex_descriptor>();
+            _e = std::vector<edge_descriptor>();
             assert(valid());}
 
         // Default copy, destructor, and copy assignment
