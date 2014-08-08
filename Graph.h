@@ -70,10 +70,10 @@ class Graph {
             bool temp = pe.second;
             if(temp){
                 if(std::find(g._v.begin(), g._v.end(), max_size) == g._v.end()){
-                    while(max_size != v_size-1){
+                    for(int i = max_size; max_size != v_size-1 ; i--){
                         add_vertex(g);
                         max_size--;
-                    }          
+                    }    
                 }
                 b = true;
                 g._g[u].push_back(v);                
