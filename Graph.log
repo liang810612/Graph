@@ -1,0 +1,77 @@
+commit 619225fe69b68f2911843061681865fe4efc473b
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Thu Aug 7 20:05:01 2014 -0500
+
+    final version
+
+commit c19a41e821c0fe67a4cdf18861700dbb70746175
+Author: Terry Linag <liang810612@utexas.edu>
+Date:   Thu Aug 7 19:54:42 2014 -0500
+
+    Delete TestGraph
+
+commit 8ab83bfb2eeaa702c3af1e61598e132dfe813b75
+Author: Terry Linag <liang810612@utexas.edu>
+Date:   Thu Aug 7 19:54:27 2014 -0500
+
+    Delete TestGraph.gcno
+
+commit 303266e621b186279f147543a139a526a0df90ca
+Author: Terry Linag <liang810612@utexas.edu>
+Date:   Thu Aug 7 19:54:23 2014 -0500
+
+    Delete TestGraph.gcda
+
+commit ee2033b75a7eda8aa63309b20e65028e1dda020f
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Thu Aug 7 19:53:37 2014 -0500
+
+    final version
+
+commit c0f9ed2c4c8e7df7d97ab49b7c63c0226cdc46d5
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Thu Aug 7 15:49:04 2014 -0500
+
+    modify valid()
+
+commit 8efe200555c6dff4e3229cfc3144c461b9eaabfe
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Thu Aug 7 15:46:43 2014 -0500
+
+    core dump in add_edge
+
+commit 560dd1fe86385ea706979886bec4603d97f73af0
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Thu Aug 7 11:43:39 2014 -0500
+
+    memory leak version
+
+commit 51ecee5143fd96b24141e521b07880c66b915e53
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Wed Aug 6 23:34:15 2014 -0500
+
+    edges be std::set
+
+commit d4564497d51178a6c979ad624c42550c201caf92
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Wed Aug 6 23:33:22 2014 -0500
+
+    with almost all functions filled
+
+commit 6b843a91cbf4d67d70305408a7fcbc689f8229ca
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Wed Aug 6 23:32:06 2014 -0500
+
+    default test cases
+
+commit 23ca7ca81bbb2220f763970a1b5c2a5bcea0eeed
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Wed Aug 6 23:31:44 2014 -0500
+
+    documentation complete
+
+commit bdc3ffd1b68942d4e1bb231b7a985bf4dfba2ff2
+Author: Terry Liang <liang810612@hotmail.com>
+Date:   Tue Aug 5 21:12:05 2014 -0500
+
+    first commit
