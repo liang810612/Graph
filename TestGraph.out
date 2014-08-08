@@ -1,0 +1,209 @@
+Running main() from gtest_main.cc
+[==========] Running 90 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 45 tests from TestGraph/0, where TypeParam = boost::adjacency_list<boost::setS, boost::vecS, boost::directedS, boost::no_property, boost::no_property, boost::no_property, boost::listS>
+[ RUN      ] TestGraph/0.Vertex
+[       OK ] TestGraph/0.Vertex (35 ms)
+[ RUN      ] TestGraph/0.Edge
+[       OK ] TestGraph/0.Edge (56 ms)
+[ RUN      ] TestGraph/0.Vertices
+[       OK ] TestGraph/0.Vertices (6 ms)
+[ RUN      ] TestGraph/0.Edges
+[       OK ] TestGraph/0.Edges (31 ms)
+[ RUN      ] TestGraph/0.Adjacent_Vertices
+[       OK ] TestGraph/0.Adjacent_Vertices (14 ms)
+[ RUN      ] TestGraph/0.Add_Edge_1
+[       OK ] TestGraph/0.Add_Edge_1 (4 ms)
+[ RUN      ] TestGraph/0.Add_Edge_2
+[       OK ] TestGraph/0.Add_Edge_2 (4 ms)
+[ RUN      ] TestGraph/0.Add_Edge_3
+[       OK ] TestGraph/0.Add_Edge_3 (11 ms)
+[ RUN      ] TestGraph/0.Add_Edge_4
+[       OK ] TestGraph/0.Add_Edge_4 (5 ms)
+[ RUN      ] TestGraph/0.Add_Edge_5
+[       OK ] TestGraph/0.Add_Edge_5 (5 ms)
+[ RUN      ] TestGraph/0.Add_vetex_1
+[       OK ] TestGraph/0.Add_vetex_1 (3 ms)
+[ RUN      ] TestGraph/0.Add_vetex_2
+[       OK ] TestGraph/0.Add_vetex_2 (4 ms)
+[ RUN      ] TestGraph/0.Add_vetex_3
+[       OK ] TestGraph/0.Add_vetex_3 (5 ms)
+[ RUN      ] TestGraph/0.Adjacent_Vertices_1
+[       OK ] TestGraph/0.Adjacent_Vertices_1 (5 ms)
+[ RUN      ] TestGraph/0.Adjacent_Vertices_2
+[       OK ] TestGraph/0.Adjacent_Vertices_2 (6 ms)
+[ RUN      ] TestGraph/0.Adjacent_Vertices_3
+[       OK ] TestGraph/0.Adjacent_Vertices_3 (8 ms)
+[ RUN      ] TestGraph/0.Edge_1
+[       OK ] TestGraph/0.Edge_1 (7 ms)
+[ RUN      ] TestGraph/0.Edge_2
+[       OK ] TestGraph/0.Edge_2 (5 ms)
+[ RUN      ] TestGraph/0.Edge_3
+[       OK ] TestGraph/0.Edge_3 (7 ms)
+[ RUN      ] TestGraph/0.Edge_4
+[       OK ] TestGraph/0.Edge_4 (88 ms)
+[ RUN      ] TestGraph/0.Edge_5
+[       OK ] TestGraph/0.Edge_5 (6 ms)
+[ RUN      ] TestGraph/0.Edges_1
+[       OK ] TestGraph/0.Edges_1 (11 ms)
+[ RUN      ] TestGraph/0.Edges_2
+[       OK ] TestGraph/0.Edges_2 (5 ms)
+[ RUN      ] TestGraph/0.Edges_3
+[       OK ] TestGraph/0.Edges_3 (9 ms)
+[ RUN      ] TestGraph/0.edges_4
+[       OK ] TestGraph/0.edges_4 (6 ms)
+[ RUN      ] TestGraph/0.num_edges_1
+[       OK ] TestGraph/0.num_edges_1 (7 ms)
+[ RUN      ] TestGraph/0.num_edges2
+[       OK ] TestGraph/0.num_edges2 (16 ms)
+[ RUN      ] TestGraph/0.num_edges3
+[       OK ] TestGraph/0.num_edges3 (6 ms)
+[ RUN      ] TestGraph/0.num_vertices_1
+[       OK ] TestGraph/0.num_vertices_1 (4 ms)
+[ RUN      ] TestGraph/0.num_vertices_2
+[       OK ] TestGraph/0.num_vertices_2 (7 ms)
+[ RUN      ] TestGraph/0.num_vertices_3
+[       OK ] TestGraph/0.num_vertices_3 (6 ms)
+[ RUN      ] TestGraph/0.source_1
+[       OK ] TestGraph/0.source_1 (5 ms)
+[ RUN      ] TestGraph/0.source_2
+[       OK ] TestGraph/0.source_2 (15 ms)
+[ RUN      ] TestGraph/0.source_3
+[       OK ] TestGraph/0.source_3 (7 ms)
+[ RUN      ] TestGraph/0.source_4
+[       OK ] TestGraph/0.source_4 (2 ms)
+[ RUN      ] TestGraph/0.source_5
+[       OK ] TestGraph/0.source_5 (3 ms)
+[ RUN      ] TestGraph/0.target_1
+[       OK ] TestGraph/0.target_1 (5 ms)
+[ RUN      ] TestGraph/0.target_2
+[       OK ] TestGraph/0.target_2 (14 ms)
+[ RUN      ] TestGraph/0.target_3
+[       OK ] TestGraph/0.target_3 (3 ms)
+[ RUN      ] TestGraph/0.Vertex_1
+[       OK ] TestGraph/0.Vertex_1 (3 ms)
+[ RUN      ] TestGraph/0.Vertex_2
+[       OK ] TestGraph/0.Vertex_2 (3 ms)
+[ RUN      ] TestGraph/0.Vertex_3
+[       OK ] TestGraph/0.Vertex_3 (3 ms)
+[ RUN      ] TestGraph/0.Vertices_1
+[       OK ] TestGraph/0.Vertices_1 (4 ms)
+[ RUN      ] TestGraph/0.Vertices_2
+[       OK ] TestGraph/0.Vertices_2 (6 ms)
+[ RUN      ] TestGraph/0.Vertices_3
+[       OK ] TestGraph/0.Vertices_3 (4 ms)
+[----------] 45 tests from TestGraph/0 (483 ms total)
+
+[----------] 45 tests from TestGraph/1, where TypeParam = Graph
+[ RUN      ] TestGraph/1.Vertex
+[       OK ] TestGraph/1.Vertex (52 ms)
+[ RUN      ] TestGraph/1.Edge
+[       OK ] TestGraph/1.Edge (51 ms)
+[ RUN      ] TestGraph/1.Vertices
+[       OK ] TestGraph/1.Vertices (8 ms)
+[ RUN      ] TestGraph/1.Edges
+[       OK ] TestGraph/1.Edges (12 ms)
+[ RUN      ] TestGraph/1.Adjacent_Vertices
+[       OK ] TestGraph/1.Adjacent_Vertices (9 ms)
+[ RUN      ] TestGraph/1.Add_Edge_1
+[       OK ] TestGraph/1.Add_Edge_1 (3 ms)
+[ RUN      ] TestGraph/1.Add_Edge_2
+[       OK ] TestGraph/1.Add_Edge_2 (4 ms)
+[ RUN      ] TestGraph/1.Add_Edge_3
+[       OK ] TestGraph/1.Add_Edge_3 (12 ms)
+[ RUN      ] TestGraph/1.Add_Edge_4
+[       OK ] TestGraph/1.Add_Edge_4 (7 ms)
+[ RUN      ] TestGraph/1.Add_Edge_5
+[       OK ] TestGraph/1.Add_Edge_5 (5 ms)
+[ RUN      ] TestGraph/1.Add_vetex_1
+[       OK ] TestGraph/1.Add_vetex_1 (2 ms)
+[ RUN      ] TestGraph/1.Add_vetex_2
+[       OK ] TestGraph/1.Add_vetex_2 (7 ms)
+[ RUN      ] TestGraph/1.Add_vetex_3
+[       OK ] TestGraph/1.Add_vetex_3 (5 ms)
+[ RUN      ] TestGraph/1.Adjacent_Vertices_1
+[       OK ] TestGraph/1.Adjacent_Vertices_1 (6 ms)
+[ RUN      ] TestGraph/1.Adjacent_Vertices_2
+[       OK ] TestGraph/1.Adjacent_Vertices_2 (20 ms)
+[ RUN      ] TestGraph/1.Adjacent_Vertices_3
+[       OK ] TestGraph/1.Adjacent_Vertices_3 (7 ms)
+[ RUN      ] TestGraph/1.Edge_1
+[       OK ] TestGraph/1.Edge_1 (6 ms)
+[ RUN      ] TestGraph/1.Edge_2
+[       OK ] TestGraph/1.Edge_2 (5 ms)
+[ RUN      ] TestGraph/1.Edge_3
+[       OK ] TestGraph/1.Edge_3 (5 ms)
+[ RUN      ] TestGraph/1.Edge_4
+[       OK ] TestGraph/1.Edge_4 (619 ms)
+[ RUN      ] TestGraph/1.Edge_5
+[       OK ] TestGraph/1.Edge_5 (5 ms)
+[ RUN      ] TestGraph/1.Edges_1
+[       OK ] TestGraph/1.Edges_1 (7 ms)
+[ RUN      ] TestGraph/1.Edges_2
+[       OK ] TestGraph/1.Edges_2 (3 ms)
+[ RUN      ] TestGraph/1.Edges_3
+[       OK ] TestGraph/1.Edges_3 (9 ms)
+[ RUN      ] TestGraph/1.edges_4
+[       OK ] TestGraph/1.edges_4 (4 ms)
+[ RUN      ] TestGraph/1.num_edges_1
+[       OK ] TestGraph/1.num_edges_1 (11 ms)
+[ RUN      ] TestGraph/1.num_edges2
+[       OK ] TestGraph/1.num_edges2 (76 ms)
+[ RUN      ] TestGraph/1.num_edges3
+[       OK ] TestGraph/1.num_edges3 (5 ms)
+[ RUN      ] TestGraph/1.num_vertices_1
+[       OK ] TestGraph/1.num_vertices_1 (4 ms)
+[ RUN      ] TestGraph/1.num_vertices_2
+[       OK ] TestGraph/1.num_vertices_2 (53 ms)
+[ RUN      ] TestGraph/1.num_vertices_3
+[       OK ] TestGraph/1.num_vertices_3 (6 ms)
+[ RUN      ] TestGraph/1.source_1
+[       OK ] TestGraph/1.source_1 (5 ms)
+[ RUN      ] TestGraph/1.source_2
+[       OK ] TestGraph/1.source_2 (42 ms)
+[ RUN      ] TestGraph/1.source_3
+[       OK ] TestGraph/1.source_3 (9 ms)
+[ RUN      ] TestGraph/1.source_4
+[       OK ] TestGraph/1.source_4 (4 ms)
+[ RUN      ] TestGraph/1.source_5
+[       OK ] TestGraph/1.source_5 (14 ms)
+[ RUN      ] TestGraph/1.target_1
+[       OK ] TestGraph/1.target_1 (6 ms)
+[ RUN      ] TestGraph/1.target_2
+[       OK ] TestGraph/1.target_2 (42 ms)
+[ RUN      ] TestGraph/1.target_3
+[       OK ] TestGraph/1.target_3 (3 ms)
+[ RUN      ] TestGraph/1.Vertex_1
+[       OK ] TestGraph/1.Vertex_1 (3 ms)
+[ RUN      ] TestGraph/1.Vertex_2
+[       OK ] TestGraph/1.Vertex_2 (4 ms)
+[ RUN      ] TestGraph/1.Vertex_3
+[       OK ] TestGraph/1.Vertex_3 (3 ms)
+[ RUN      ] TestGraph/1.Vertices_1
+[       OK ] TestGraph/1.Vertices_1 (5 ms)
+[ RUN      ] TestGraph/1.Vertices_2
+[       OK ] TestGraph/1.Vertices_2 (8 ms)
+[ RUN      ] TestGraph/1.Vertices_3
+[       OK ] TestGraph/1.Vertices_3 (9 ms)
+[----------] 45 tests from TestGraph/1 (1195 ms total)
+
+[----------] Global test environment tear-down
+[==========] 90 tests from 2 test cases ran. (1705 ms total)
+[  PASSED  ] 90 tests.
+
+
+
+File 'TestGraph.c++'
+Lines executed:100.00% of 539
+Branches executed:56.55% of 6850
+Taken at least once:28.92% of 6850
+Calls executed:43.26% of 4697
+Creating 'TestGraph.c++.gcov'
+
+File 'Graph.h'
+Lines executed:96.72% of 61
+Branches executed:100.00% of 44
+Taken at least once:56.82% of 44
+Calls executed:84.72% of 72
+Creating 'Graph.h.gcov'
+
